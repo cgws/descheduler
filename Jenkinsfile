@@ -23,7 +23,7 @@ pipeline {
             ],
           ]) {
             dockerBuild repo: env.ECR_REPO,
-              image: 'catch/descheduler',
+              image: 'kubernetes-incubator/descheduler',
               dockerfile: 'Dockerfile',
               tags: [
                 env.BRANCH_NAME,
